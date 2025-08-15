@@ -6,4 +6,9 @@ public partial class Form1 : Form
     {
         InitializeComponent();
     }
+
+    private void Form1_Click(object sender, EventArgs e)
+    {
+        MessageBox.Show("Enter Button CLicked!");
+    }
 }

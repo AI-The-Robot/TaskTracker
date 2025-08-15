@@ -29,16 +29,32 @@ partial class Form1
     /// </summary>
     private void InitializeComponent()
     {
+        enterButton = new System.Windows.Forms.Button();
         SuspendLayout();
+        // 
+        // enterButton
+        // 
+        enterButton.AutoSize = true;
+        enterButton.Location = new System.Drawing.Point(146, 172);
+        enterButton.Name = "enterButton";
+        enterButton.Size = new System.Drawing.Size(75, 25);
+        enterButton.TabIndex = 0;
+        enterButton.Text = "Enter";
+        enterButton.UseVisualStyleBackColor = true;
         // 
         // Form1
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        ClientSize = new System.Drawing.Size(800, 450);
-        Text = "Form1";
+        ClientSize = new System.Drawing.Size(639, 428);
+        Controls.Add(enterButton);
+        Text = "Task Tracker";
+        Click += Form1_Click;
         ResumeLayout(false);
+        PerformLayout();
     }
+
+    private System.Windows.Forms.Button enterButton;
 
     #endregion
 }
